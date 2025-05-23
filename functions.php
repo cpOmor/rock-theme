@@ -12,6 +12,8 @@ add_theme_support('title-tag');
 // theme css and js file calling
 function ri_theme_css_js_file_calling() { 
     wp_enqueue_style('ri-style', get_stylesheet_uri());
+    wp_enqueue_style('ri-custom', get_template_directory_uri() . '/css/custom.css');
+    wp_enqueue_style('ri-custom');
     wp_register_style('ri-bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array(), '5.3.6', 'all');
     wp_enqueue_style('ri-bootstrap');
 
